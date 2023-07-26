@@ -1,10 +1,10 @@
 import React from "react";
 import '../styles/Footer.css';
-import logo from '../styles/imgs/STEA_1500px@2x.png';
-import facebookLogo from '../styles/imgs/facebook-svgrepo-com.svg';
-import linkedInLogo from '../styles/imgs/linkedin-svgrepo.svg';
+import logo from '../styles/imgs/STEA_1500px.png';
+import { ReactComponent as LinkedInLogo } from '../styles/imgs/linkedin-svgrepo-com.svg';
+import { ReactComponent as FacebookLogo } from '../styles/imgs/facebook-svgrepo-com.svg';
 
-export default function({ currentPage, handlePageChange }) {
+export default function Footer({ currentPage, handlePageChange }) {
 
     return (
         <footer>
@@ -16,11 +16,11 @@ export default function({ currentPage, handlePageChange }) {
 
                 <li id="link-imgs">
                     <a href="https://http.cat/status/404">
-                        <img src={linkedInLogo} alt="Logo for Linkedin" />
+                        <LinkedInLogo />
                     </a>
 
                     <a href="https://http.cat/status/404">
-                        <img src={facebookLogo} alt="Logo for Facebook" />
+                        <FacebookLogo />
                     </a>
                 </li>
 
@@ -41,9 +41,44 @@ export default function({ currentPage, handlePageChange }) {
 
             <nav className="nav-footer">
                 <ul className="right-footer">
+                    <li id="home-link">
+                        <a 
+                        href="#main-page" 
+                        onClick={() =>
+                        handlePageChange('Main')} 
+                        className={currentPage === 'Home' ? 'nav-link-active' : 'nav-link'}>
+                            HOME
+                        </a>
+                    </li>
+
+                    <li id="footer-contact">
+                        <a href="#about-us">
+                            CONTACT
+                        </a>
+                    </li>
                     
+                    <li id="footer-about-us">
+                        <a href="#about-us">
+                            ABOUT US
+                        </a>
+                    </li>
+
+                    <li id="footer-how-it-works">
+                        <a href="#how-it-works">
+                            HOW IT WORKS
+                        </a>
+                    </li>
+
+                    <li id="footer-privacy-policy">
+                        <a 
+                        href="#privacy-policy" 
+                        onClick={() => handlePageChange('PrivacyPolicy')} 
+                        className={currentPage === 'PrivacyPolicy' ? 'nav-link-active' : 'nav-link'}>
+                            PRIVACY POLICY
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </footer>
-    )
-}
+    );
+};

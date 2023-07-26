@@ -1,0 +1,85 @@
+:root {
+    --text-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    width: 100%;
+    z-index: 1000;
+    padding-top: 18px;
+    padding-bottom: 14px;
+}
+
+#header-logo {
+    padding-left: 102px;
+}
+
+.nav-bar {
+    padding-right: 85px;
+}
+
+.nav-options {
+    display: flex;
+    margin-top: 36px;
+}
+
+.nav-options li {
+    margin-left: 58px;
+    
+}
+
+.nav-options li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2.06px;
+}
+
+@media screen and (max-width: 1050px) {
+    header {
+       padding-top: 22px;
+    }
+
+    #header-logo {
+        padding-left: 50px;
+        max-width: 240px;
+        max-height: 76px;
+    }
+
+    .nav-options li a {
+        font-size: 16px;
+    }
+
+    .nav-options li {
+        margin-left: 40px;
+    }
+
+    .nav-bar {
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    header {
+        position: inherit;
+        padding-top: 10px;
+    }
+
+    #header-logo {
+        max-width: 200px;
+        max-height: 60px;
+        padding-left: 10px;
+    }
+
+    .nav-bar {
+        padding-right: 28px;
+        padding-top: 13px;
+    }
+}

@@ -1,0 +1,64 @@
+.total-header {
+    display: flex;
+}
+
+.nav-drop-down {
+    display: none;
+    margin-top: 23px;
+    margin-right: 28px;
+}
+
+.drop-trigger img {
+    height: 35px;
+    width: 36px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.drop-menu {
+    position: absolute;
+    background-color: white;
+    list-style-type: none;
+    top: 11%;
+    left: 0.5%;
+    width: 99%;
+    height: 173px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+.drop-menu li a,
+.drop-menu li {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    letter-spacing: 2.74px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    margin-top: 32px;
+}
+
+.drop-menu.inactive {
+    display: none;
+}
+
+.drop-menu.active {
+
+}
+
+@media screen and (max-width: 767px) {
+    .nav-drop-down {
+        display: block;
+    }
+
+    .nav-options {
+        display: none;
+    }
+
+    .nav-bar {
+        padding-right: 28px;
+        padding-top: 13px;
+    }
+}

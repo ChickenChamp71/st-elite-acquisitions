@@ -1,0 +1,43 @@
+.main-home {
+    margin-top: 118px;
+}
+
+.home-top {
+    background-image: url("../styles/imgs/andy-holmes-f6eWKcd8_dA-unsplash.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+.transparent {
+    height: 1463px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+h1 {
+    opacity: 100%;
+    font-size: 48px;
+    text-align: center;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: bold;
+    letter-spacing: 11.28px;
+}
+
+.transparent h1 {
+    padding-top: 148px;
+}
+
+.transparent h2 {
+    opacity: 100%;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: bold;
+    letter-spacing: 3.09px;
+    margin-top: 22px;
+}
+
+@media screen and (max-width: 1050px) {
+    .main-home {
+        margin-top: 0;
+    }
+}
