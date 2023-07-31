@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import "../styles/Header.css";
 import Main from "./pages/Main";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import toggle from '../styles/imgs/toggle.png';
@@ -18,10 +17,9 @@ export default function Container() {
     useEffect(() => {
         let handler = (e) => {
 
-            if (!menuRef.current.contains(e.target)) {
+            if (menuRef.current && !menuRef.current.contains(e.target)) {
                 setOpen(false);
             }
-            
         }
 
         document.addEventListener('mousedown', handler);
@@ -51,21 +49,21 @@ export default function Container() {
                     </div>
 
                     <div className={`drop-menu ${open? 'active' : 'inactive'}` }>
-                        <li id='contact'>
+                        <li id='contact-drop-menu'>
                             <a href='#contact' onClick={() => {
                             setOpen(false)
                             }}>
                                 CONTACT
                             </a>
                         </li>
-                        <li id='about-us'>
+                        <li id='about-us-drop-menu'>
                             <a href='#about-us' onClick={() => {
                             setOpen(false)
                             }}>
                                 ABOUT US
                             </a>
                         </li>
-                        <li id='how-it-works'>
+                        <li id='how-it-works-drop-menu'>
                             <a href='#how-it-works' onClick={() => {
                             setOpen(false)
                             }}>

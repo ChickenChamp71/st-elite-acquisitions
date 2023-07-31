@@ -11,23 +11,24 @@ export default function Header() {
 
             <nav className='nav-bar'>
                 <ul className='nav-options'>
-                    <li id='contact'>
+                    <li id='contact-top-links'>
                         <a href='#contact'>
                             CONTACT
                         </a>
                     </li>
-                    <li id='about-us'>
+                    <li id='about-us-top-links'>
                         <a href='#about-us'>
                             ABOUT US
                         </a>
                     </li>
-                    <li id='how-it-works'>
+                    <li id='how-it-top-links'>
                         <a href='#how-it-works'>
                             HOW IT WORKS
                         </a>
                     </li>
                 </ul>
             </nav>
+            
         </header>
     );
 };

@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .total-header {
     display: flex;
 }
@@ -6,26 +10,34 @@
     display: none;
     margin-top: 23px;
     margin-right: 28px;
+    z-index: 3;
 }
 
 .drop-trigger img {
     height: 35px;
     width: 36px;
-    overflow: hidden;
     cursor: pointer;
+    z-index: 3;
+}
+
+.drop-trigger {
+    z-index: 3;
 }
 
 .drop-menu {
     position: absolute;
     background-color: white;
     list-style-type: none;
-    top: 11%;
-    left: 0.5%;
-    width: 99%;
+    top: 85px;
+    width: 100%;
+    right: 0;
     height: 173px;
-    border-width: 1px;
+    border-width: 1pt;
     border-color: black;
     border-style: solid;
+    z-index: 2;
+    border-bottom-left-radius: 14pt;
+    border-bottom-right-radius: 14pt;
 }
 
 .drop-menu li a,
@@ -42,10 +54,39 @@
 
 .drop-menu.inactive {
     display: none;
+    z-index: 1;
+    animation-name: reverse-drop;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 
 .drop-menu.active {
+    animation-name: drop-slide;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
 
+@keyframes drop-slide {
+
+    from {
+        top: -100px;
+    }
+    to {
+        top: 85px;
+    }
+}
+
+@keyframes reverse-drop {
+    
+    from {
+        display: block;
+        top: 85px;
+    }
+    to {
+        display: none;
+        top: -100px;
+    }
 }
 
 @media screen and (max-width: 767px) {

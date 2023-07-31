@@ -1,0 +1,15 @@
+
+
+.notif-success.active,
+.notif-fail.active {
+    display: block;
+}
+
+.notif-success.inactive,
+.notif-fail.inactive {
+    display: none;
+}
+
+.contact-form-container {
+    background-color: white;
+}

@@ -1,8 +1,8 @@
 import React from "react";
-import '../styles/Footer.css';
 import logo from '../styles/imgs/STEA_1500px.png';
 import { ReactComponent as LinkedInLogo } from '../styles/imgs/linkedin-svgrepo-com.svg';
 import { ReactComponent as FacebookLogo } from '../styles/imgs/facebook-svgrepo-com.svg';
+import '../styles/Footer.css';
 
 export default function Footer({ currentPage, handlePageChange }) {
 
@@ -31,7 +31,9 @@ export default function Footer({ currentPage, handlePageChange }) {
                 </li>
 
                 <li className="email-main">
-                    EMAIL@STELITEACQUISITIONS.GOV
+                    <h5>
+                        EMAIL@STELITEACQUISITIONS.GOV
+                    </h5>
                 </li>
             </ul>
             
@@ -43,7 +45,7 @@ export default function Footer({ currentPage, handlePageChange }) {
                 <ul className="right-footer">
                     <li id="home-link">
                         <a 
-                        href="#main-page" 
+                        href="#home" 
                         onClick={() =>
                         handlePageChange('Main')} 
                         className={currentPage === 'Home' ? 'nav-link-active' : 'nav-link'}>
@@ -52,7 +54,7 @@ export default function Footer({ currentPage, handlePageChange }) {
                     </li>
 
                     <li id="footer-contact">
-                        <a href="#about-us">
+                        <a href="#contact-2">
                             CONTACT
                         </a>
                     </li>

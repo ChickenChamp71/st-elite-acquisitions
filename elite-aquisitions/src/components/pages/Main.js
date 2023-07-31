@@ -17,7 +17,7 @@ export default function Main() {
                     <h2>
                         FAST, EASY, AS IS.
                     </h2>
-                    <div className="contact" id="contact">
+                    <div id="contact">
                         <Contact />
                     </div>
                     
@@ -56,7 +56,7 @@ export default function Main() {
                 
             </section>
 
-            <section className="about-us" id="about-us">
+            <section id="about-us">
                 <h1>
                     ABOUT US
                 </h1>
@@ -90,7 +90,7 @@ export default function Main() {
                 </div>
             </section>
 
-            <section className="how-it-works" id="how-it-works">
+            <section id="how-it-works">
                 <section className="white-box" id="how-it-box">
                     <h1>
                         HOW IT WORKS
@@ -157,7 +157,7 @@ export default function Main() {
 
                 </section>
 
-                <div className="contact" id="contact-2">
+                <div id="contact-2">
                     <Contact />
                 </div>                
 
