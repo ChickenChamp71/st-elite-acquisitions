@@ -6,7 +6,8 @@ import { ReactComponent as Closing } from "../../styles/imgs/closing.svg";
 import Contact from "../Contact";
 import "../../styles/Main.css";
 
-export default function Main() {
+export default function Main({ handleFailState, handleSuccessState }) {
+
     return (
         <main className="main-home">
             <section className="home-top" id="home">
@@ -17,8 +18,8 @@ export default function Main() {
                     <h2>
                         FAST, EASY, AS IS.
                     </h2>
-                    <div id="contact">
-                        <Contact />
+                    <div id="contact" className="contact-full">
+                        <Contact handleFailState={handleFailState} handleSuccessState={handleSuccessState} />
                     </div>
                     
                     <div className="white-box" id="bullet-list">
@@ -157,8 +158,8 @@ export default function Main() {
 
                 </section>
 
-                <div id="contact-2">
-                    <Contact />
+                <div id="contact-2" className="contact-full">
+                    <Contact handleFailState={handleFailState} handleSuccessState={handleSuccessState} />
                 </div>                
 
             </section>

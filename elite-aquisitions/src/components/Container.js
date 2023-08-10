@@ -9,7 +9,9 @@ import "../styles/Container.css";
 export default function Container() {
     
     const [currentPage, setCurrentPage] = useState('Main');
-
+    const [notifFailState, setNotifFailState] = useState(false);
+    const [notifSuccessState, setNotifSuccessState] = useState(false);
+    const [notifState, setNotifState] = useState(false);
     const [open, setOpen] = useState(false);
 
     let menuRef = useRef();
@@ -31,14 +33,43 @@ export default function Container() {
         if (currentPage === 'PrivacyPolicy') {
             return <PrivacyPolicy />
         }
-        return <Main />
+        return <Main handleFailState={handleFailState} handleSuccessState={handleSuccessState} />
 
     };
 
     const handlePageChange = (page) => setCurrentPage(page);
 
+    const handleFailState = (failState) => {
+
+        setNotifFailState(failState);
+        console.log(failState);
+        handleNotifState();
+    };
+
+    const handleSuccessState = (successState) => {
+        
+        setNotifSuccessState(successState);
+        console.log(successState);
+        handleNotifState();
+    };
+
+    const handleNotifState = () => {
+
+        console.log('why??');
+        console.log(notifFailState);
+        console.log(notifSuccessState);
+
+        if (notifFailState || notifSuccessState) {
+            
+            setNotifState(true);
+            console.log(notifState)
+            return;
+        };
+        setNotifState(false);
+    };
+
     return (
-        <div className="body">
+        <div className={`body ${notifState ? "dialog" : ""}`}>
             <div className="total-header">
                 <Header />
                 <div className='nav-drop-down' ref={menuRef}>

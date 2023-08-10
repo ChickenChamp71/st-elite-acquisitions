@@ -17,7 +17,6 @@ h1 {
     opacity: 100%;
     font-size: 48px;
     text-align: center;
-    font-family: 'Atkinson Hyperlegible', sans-serif;
     font-weight: bold;
     letter-spacing: 11.28px;
 }
@@ -30,10 +29,19 @@ h1 {
     opacity: 100%;
     font-size: 30px;
     text-align: center;
-    font-family: 'Atkinson Hyperlegible', sans-serif;
     font-weight: bold;
     letter-spacing: 3.09px;
     margin-top: 22px;
+}
+
+.contact-full {
+    display: flex;
+    justify-content: center;
+}
+
+.white-box {
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width: 1050px) {
