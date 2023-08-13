@@ -33,7 +33,7 @@ export default function Container() {
         if (currentPage === 'PrivacyPolicy') {
             return <PrivacyPolicy />
         }
-        return <Main handleFailState={handleFailState} handleSuccessState={handleSuccessState} />
+        return <Main handleFailState={handleFailState} handleSuccessState={handleSuccessState} notifState={notifState} />
 
     };
 
@@ -42,43 +42,63 @@ export default function Container() {
     const handleFailState = (failState) => {
 
         setNotifFailState(failState);
-        console.log(failState);
-        handleNotifState();
+        handleNotifState(notifSuccessState, failState);
     };
 
     const handleSuccessState = (successState) => {
         
         setNotifSuccessState(successState);
-        console.log(successState);
-        handleNotifState();
+        handleNotifState(successState, notifFailState);
     };
 
-    const handleNotifState = () => {
+    const handleNotifState = (success, fail) => {
 
-        console.log('why??');
-        console.log(notifFailState);
-        console.log(notifSuccessState);
-
-        if (notifFailState || notifSuccessState) {
+        if (success || fail) {
             
             setNotifState(true);
-            console.log(notifState)
             return;
         };
         setNotifState(false);
     };
 
-    return (
-        <div className={`body ${notifState ? "dialog" : ""}`}>
-            <div className="total-header">
-                <Header />
-                <div className='nav-drop-down' ref={menuRef}>
-                    <div className='drop-trigger'>
-                        <img src={toggle} alt='Toggle menu button.' onClick={() => {
-                            setOpen(!open)
-                        }} />
-                    </div>
+    const openTriggerCheck = () => {
+        if (!open) {
+            console.log(open)
+            setOpen(true);
+            return;
+        }
+        setOpen(false);
+    }
 
+    return (
+        <div className='notif-div'>
+
+            <dialog className={`notif-success ${notifSuccessState? 'active' : 'inactive'}`}>
+                <h2 className="dialog-text">
+                    Information successfully submitted.
+                </h2>
+
+                <button onClick={() => handleSuccessState(!notifSuccessState)} id="close-success" name="close-window" className="close-btn">CLOSE</button>
+            </dialog>
+
+            <dialog className={`notif-fail ${notifFailState? 'active' : 'inactive' }`}>
+                <h2 className="dialog-text">
+                    Please try again.
+                </h2>
+
+                <button onClick={() => handleFailState(!notifFailState)} id="close-fail" name="close-window" className="close-btn">CLOSE</button>
+            </dialog>                
+            
+            <div className="total-header">
+
+                <div className={`header-notif ${notifState? "dialog" : ""}`} ref={menuRef}>
+                     <Header notifState={notifState} />
+                     <div className='drop-trigger'>
+                        <img src={toggle} alt='Toggle menu button.' onClick={openTriggerCheck} />
+                    </div>
+                </div>
+
+                <div className='nav-drop-down' ref={menuRef}>
                     <div className={`drop-menu ${open? 'active' : 'inactive'}` }>
                         <li id='contact-drop-menu'>
                             <a href='#contact' onClick={() => {
@@ -104,11 +124,16 @@ export default function Container() {
                     </div>
                 </div>
             </div>
-            
-            <div className="main-page">
-                {renderPage()}
+
+            <div className={`body ${notifState ? "dialog" : ""}`}>
+
+                
+                <div className="main-page">
+                    {renderPage()}
+                </div>
+                <Footer currentPage={currentPage} handlePageChange={handlePageChange} notifState={notifState} />
             </div>
-            <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
         </div>
+        
     );
 };

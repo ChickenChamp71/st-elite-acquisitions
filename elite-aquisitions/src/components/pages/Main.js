@@ -6,53 +6,56 @@ import { ReactComponent as Closing } from "../../styles/imgs/closing.svg";
 import Contact from "../Contact";
 import "../../styles/Main.css";
 
-export default function Main({ handleFailState, handleSuccessState }) {
+export default function Main({ handleFailState, handleSuccessState, notifState }) {
 
     return (
         <main className="main-home">
             <section className="home-top" id="home">
                 <div className="transparent">
-                    <h1>
+                    <h1 id="top-title">
                         QUICKLY SELL YOUR PROPERTY FOR CASH
                     </h1>
-                    <h2>
+                    <h2 id="top-subtitle">
                         FAST, EASY, AS IS.
                     </h2>
                     <div id="contact" className="contact-full">
-                        <Contact handleFailState={handleFailState} handleSuccessState={handleSuccessState} />
+                        <Contact handleFailState={handleFailState} handleSuccessState={handleSuccessState} notifState={notifState} />
                     </div>
                     
-                    <div className="white-box" id="bullet-list">
-                        <ul>
-                            <li id="buy-houses">
-                                WE BUY HOUSES IN WASHINGTON STATE
-                            </li>
+                    <section className="bullet-list-flex">
+                        <div className="white-box" id="bullet-list">
+                            <ul>
+                                <li id="buy-houses">
+                                    WE BUY HOUSES IN WASHINGTON STATE
+                                </li>
 
-                            <li id="zero-fees">
-                                ZERO FEES & ZERO CLOSING COSTS
-                            </li>
+                                <li id="zero-fees">
+                                    ZERO FEES & ZERO CLOSING COSTS
+                                </li>
 
-                            <li id="close-within">
-                                CLOSE WITHIN 30 DAYS
-                            </li>
+                                <li id="close-within">
+                                    CLOSE WITHIN 30 DAYS
+                                </li>
 
-                            <li id="guaranteed">
-                                GUARANTEED OFFER
-                            </li>
+                                <li id="guaranteed">
+                                    GUARANTEED OFFER
+                                </li>
 
-                            <li id="as-is">
-                                "AS IS" - NO REPAIRS ARE NEEDED
-                            </li>
+                                <li id="as-is">
+                                    "AS IS" — NO REPAIRS ARE NEEDED
+                                </li>
 
-                            <li id="no-showings">
-                                NO SHOWINGS OR ENDLESS WALKTHROUGHS
-                            </li>
+                                <li id="no-showings">
+                                    NO SHOWINGS OR ENDLESS WALKTHROUGHS
+                                </li>
 
-                            <li id="no-appraisals">
-                                NO APPRAISALS OR APPROVAL DELAYS
-                            </li>
-                        </ul>
-                    </div>
+                                <li id="no-appraisals">
+                                    NO APPRAISALS OR APPROVAL DELAYS
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    
                 </div>
                 
             </section>
@@ -92,76 +95,85 @@ export default function Main({ handleFailState, handleSuccessState }) {
             </section>
 
             <section id="how-it-works">
-                <section className="white-box" id="how-it-box">
-                    <h1>
-                        HOW IT WORKS
-                    </h1>
+                <div className="transparent">
+                    <div className="how-it-flex">
+                        <section className="white-box" id="how-it-box">
+                            <h1>
+                                HOW IT WORKS
+                            </h1>
 
-                    <div className="work-steps">
-                        <div id="contact-step">
-                            <ContactUs />
-                            <h2>
-                                CONTACT US
-                            </h2>
+                            <div className="work-steps">
+                                <div className="step-boxes" id="contact-step">
+                                    <ContactUs />
+                                    <h2>
+                                        CONTACT US
+                                    </h2>
 
-                            <p>
-                                Tell us about your property.
-                            </p>
-                        </div>
+                                    <p>
+                                        Tell us about your property.
+                                    </p>
+                                </div>
 
-                        <div id="we-contact-step">
-                            <WeContactYou />
-                            <h2>
-                                WE CONTACT YOU
-                            </h2>
+                                <div className="step-boxes" id="we-contact-step">
+                                    <WeContactYou />
+                                    <h2>
+                                        WE CONTACT YOU
+                                    </h2>
 
-                            <p>
-                                If your property meets our buying criteria, we'll contact you to schedule a quick phone call.
-                            </p>
-                        </div>
+                                    <p>
+                                        If your property meets our buying criteria, we'll contact you to schedule a quick phone call.
+                                    </p>
+                                </div>
 
-                        <div id="the-offer-step">
-                            <TheOffer />
+                                <div className="step-boxes" id="the-offer-step">
+                                    <TheOffer />
 
-                            <h2>
-                                THE OFFER
-                            </h2>
+                                    <h2>
+                                        THE OFFER
+                                    </h2>
 
-                            <p>
-                                We'll present a no-obligation offer to you within 24 hours.
-                            </p>
-                        </div>
+                                    <p>
+                                        We'll present a no-obligation offer to you within 24 hours.
+                                    </p>
+                                </div>
 
-                        <div id="closing-step">
-                            <Closing />
+                                <div className="step-boxes" id="closing-step">
+                                    <Closing />
 
-                            <h2>
-                                CLOSING
-                            </h2>
+                                    <h2>
+                                        CLOSING
+                                    </h2>
 
-                            <p>
-                                We'll close with a local, trusted title company within 21-30 days.
-                            </p>
-                        </div>
-                        
+                                    <p>
+                                        We'll close with a local, trusted title company within 21-30 days.
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </section>
                     </div>
-                </section>
+                    
+                    <div className="selling-home-flex">
+                        <section className="white-box" id="selling-your-home">
+                            <h2>
+                                SELLING YOUR HOME CAN BE A QUICK AND EASY PROCESS
+                            </h2>
 
-                <section className="white-box" id="selling-your-home">
-                    <h2>
-                        SELLING YOUR HOME CAN BE A QUICK AND EASY PROCESS
-                    </h2>
+                            <div className="flex-paragraph">
+                                <p>
+                                    ST Elite Acquisitions specializes in purchasing houses throughout Washington directly from homeowners. Unlike traditional real estate agents who list properties, we are the direct buyers, offering cash payments that allow for quick and flexible closing timelines, tailored to your preferences. Working with us means no fees or commissions, which are typically associated with listing a house with an agent. You won't have to deal with extra costs or come out of pocket to sell your home promptly. Plus, there's no need to worry about preparing your property for sale, as we are willing to buy it in its current condition, whether it's in need of repair or not, and regardless of its location. We believe in hassle-free transactions, ensuring you can sell your house fast without the burden of additional expenses or home improvements.
+                                </p>
+                            </div>
 
-                    <p>
-                        ST Elite Acquisitions specializes in purchasing houses throughout Washington directly from homeowners. Unlike traditional real estate agents who list properties, we are the direct buyers, offering cash payments that allow for quick and flexible closing timelines, tailored to your preferences. Working with us means no fees or commissions, which are typically associated with listing a house with an agent. You won't have to deal with extra costs or come out of pocket to sell your home promptly. Plus, there's no need to worry about preparing your property for sale, as we are willing to buy it in its current condition, whether it's in need of repair or not, and regardless of its location. We believe in hassle-free transactions, ensuring you can sell your house fast without the burden of additional expenses or home improvements.
-                    </p>
+                        </section>
+                    </div>
+                    
 
-                </section>
-
-                <div id="contact-2" className="contact-full">
-                    <Contact handleFailState={handleFailState} handleSuccessState={handleSuccessState} />
-                </div>                
-
+                    <div id="contact-2" className="contact-full">
+                        <Contact handleFailState={handleFailState} handleSuccessState={handleSuccessState} notifState={notifState} />
+                    </div>
+                </div>
+                             
             </section>
         </main>
     );

@@ -10,13 +10,11 @@ html {
 
 .total-header {
     display: flex;
+    justify-content: space-between;
 }
 
 .nav-drop-down {
     display: none;
-    margin-top: 23px;
-    margin-right: 28px;
-    z-index: 3;
 }
 
 .drop-trigger img {
@@ -73,18 +71,95 @@ html {
     z-index: 1;
 }
 
-@keyframes drop-slide {
+.header-notif.dialog header {
+    animation-name: notification;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
 
+.body.dialog {
+    animation-name: notification;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.notif-success,
+.notif-fail {
+    border-radius: 14px;
+    position: fixed;
+    top: 40%;
+    left: 0%;
+    border: 2px solid white;
+    z-index: 1005;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height: fit-content;
+    font-size: 40px;
+    text-align: center;
+}
+
+.close-btn {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2.06px;
+    line-height: 24px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: bold;
+    border-radius: 14px;
+    border: 1px solid black;
+    width: 221px;
+    height: 63px;
+    margin-top: 29px;
+    align-self: center;
+}
+
+.close-btn:hover,
+.close-btn:active {
+    cursor: pointer;
+    animation-name: button-hover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.close-btn:active {
+    animation-name: button-press;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.notif-success.active,
+.notif-fail.active {
+    display: block;
+}
+
+.notif-success.inactive,
+.notif-fail.inactive {
+    display: none;
+}
+
+.header-notif {
+    z-index: 1000;
+}
+
+.drop-trigger {
+    background-color: white;
+}
+
+.drop-menu {
+    z-index: 500;
+}
+
+@keyframes drop-slide {
     from {
         top: -100px;
     }
     to {
-        top: 85px;
+        top: 84px;
     }
 }
 
 @keyframes reverse-drop {
-    
     from {
         display: block;
         top: 85px;
@@ -95,7 +170,16 @@ html {
     }
 }
 
-@media screen and (max-width: 767px) {
+@keyframes notification {
+    from {
+        filter: brightness(100%);
+    }
+    to {
+        filter: brightness(25%);
+    }
+}
+
+@media screen and (max-width: 800px) {
     .nav-drop-down {
         display: block;
     }
@@ -108,4 +192,21 @@ html {
         padding-right: 28px;
         padding-top: 13px;
     }
+
+    .total-header {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+    }
+
+    .header-notif {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+}
+
+@media screen and (max-width: 640px) {
+
 }

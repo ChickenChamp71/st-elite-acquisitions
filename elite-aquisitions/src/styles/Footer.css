@@ -1,0 +1,85 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 39px 70px 43px 70px;
+    background-color: white;
+}
+
+.footer-section {
+    width: 412px;
+}
+
+.left-footer {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.left-footer ul li {
+    margin-bottom: 20px;
+}
+
+#link-imgs {
+    height: 44px;
+}
+
+.left-footer ul li a {
+    position: relative;
+    width: 43px;
+    height: 43px;
+    display: inline-block;
+}
+
+.left-footer ul li a svg {
+    position: absolute;
+}
+
+.left-footer .email-main {
+    margin-bottom: 0px;
+}
+
+.linkedin-disable {
+    margin-right: 26px;
+}
+
+.center-footer {
+    font-size: 20px;
+    letter-spacing: 2.06px;
+    line-height: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav-footer ul li {
+    text-align: end;
+    margin-bottom: 21px;
+}
+
+#footer-privacy-policy {
+    margin-bottom: 0px;
+}
+
+.nav-footer ul li a {
+    font-size: 20px; 
+    letter-spacing: 2.06px;
+    line-height: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.linkedin-disable.disabled,
+.facebook-disable.disabled,
+.home-href.disabled,
+.contact-2-disable.disabled,
+.about-2-disable.disabled,
+.how-2-disable.disabled,
+.privacy-href.disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+}

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { validateEmail } from "../utils/helpers";
 import '../styles/Contact.css';
 
-export default function Contact({ handleFailState, handleSuccessState }) {
+export default function Contact({ handleFailState, handleSuccessState, notifState }) {
 
     const [address, setAddress] = useState('');
     const [phone, setPhone] = useState('');
@@ -23,8 +23,6 @@ export default function Contact({ handleFailState, handleSuccessState }) {
         email: true,
         name: true
     })
-    const [notifFail, isNotifFail] = useState(false);
-    const [notifSuccess, isNotifSuccess] = useState(false);
 
     const handleInputChange = (e) => {
 
@@ -132,8 +130,6 @@ export default function Contact({ handleFailState, handleSuccessState }) {
 
         e.preventDefault();
 
-        console.log('why are you running');
-
         if (!errTrue.address && !errTrue.phone && !errTrue.email && !errTrue.name) {
 
             setAddress('');
@@ -149,19 +145,27 @@ export default function Contact({ handleFailState, handleSuccessState }) {
                 name: true
             });
 
-            isNotifSuccess(true);
-            handleSuccessState(notifSuccess);
+            successStateCheck();
             return;
         };
 
-        isNotifFail(true);
-        console.log(notifFail);
-        handleFailState(notifFail);
+        failStateCheck();
+        return;
     };
 
     const handleCheckboxChange = () => {
         setRecieve(!recieve);
     }
+
+    const failStateCheck = () => {
+        handleFailState(true);
+        return;
+    };
+
+    const successStateCheck = () => {
+        handleSuccessState(true);
+        return;
+    };
 
     return (
         <section className="contact-form-container">
@@ -175,7 +179,7 @@ export default function Contact({ handleFailState, handleSuccessState }) {
                             name="address"
                             onBlur={handleAddressErr}
                             onChange={handleInputChange}
-                            className={`address-input input-border ${redAddress? 'red' : 'not-red'}`}
+                            className={`address-input input-border ${redAddress? 'red' : 'not-red'} ${notifState? 'disabled' : ''}`}
                         />
                         {addressErr && (
                             <div className="error-div" id="id-address-err">
@@ -190,7 +194,7 @@ export default function Contact({ handleFailState, handleSuccessState }) {
                             name="phone"
                             onBlur={handlePhoneErr}
                             onChange={handleInputChange}
-                            className={`phone-input input-border ${redPhone? 'red' : 'not-red'}`}
+                            className={`phone-input input-border ${redPhone? 'red' : 'not-red'} ${notifState? 'disabled' : ''}`}
                         />
                         {phoneErr && (
                             <div className="error-div" id="id-phone-err">
@@ -205,7 +209,7 @@ export default function Contact({ handleFailState, handleSuccessState }) {
                             name="email"
                             onBlur={handleEmailErr}
                             onChange={handleInputChange}
-                            className={`email-input input-border ${redEmail? 'red' : 'not-red'}`}
+                            className={`email-input input-border ${redEmail? 'red' : 'not-red'} ${notifState? 'disabled' : ''}`}
                         />
                         {emailErr && (
                             <div className="error-div" id="id-email-err">
@@ -220,7 +224,7 @@ export default function Contact({ handleFailState, handleSuccessState }) {
                             name="name" 
                             onBlur={handleNameErr}
                             onChange={handleInputChange}
-                            className={`name-input input-border ${redName? 'red' : 'not-red'}`}
+                            className={`name-input input-border ${redName? 'red' : 'not-red'} ${notifState? 'disabled' : ''}`}
                         />
                         {nameErr && (
                             <div className="error-div" id="id-name-err">
@@ -235,6 +239,7 @@ export default function Contact({ handleFailState, handleSuccessState }) {
                                 name="recieve" 
                                 checked={recieve}
                                 onChange={handleCheckboxChange}
+                                className={`check-disable ${notifState? 'disabled' : ''}`}
                             />
                             <label className="for-checkbox">RECIEVE TEXT MESSAGES</label>
                         </div>
@@ -243,7 +248,7 @@ export default function Contact({ handleFailState, handleSuccessState }) {
                     <div className="para-sub-box">
                         <p className="contact-form-p">By completing this form, you give consent to ST Elite Acquisitions to send SMS Text Messages. Standard message and data rates may apply.</p>
 
-                        <button type="button" onClick={handleFormSubmit} className="submit-btn">SUBMIT</button>
+                        <button type="button" onClick={handleFormSubmit} className={`submit-btn ${notifState? 'disabled' : ''}`}>SUBMIT</button>
                     </div>
 
                 </form>
@@ -260,28 +265,6 @@ export default function Contact({ handleFailState, handleSuccessState }) {
                     EMAIL@STELITEACQUISITIONS.GOV
                 </h5>
             </div>
-            
-            <dialog className={`notif-success ${notifSuccess? 'active' : 'inactive'}`}>
-                <h2 className="dialog-text">
-                    Information successfully submitted.
-                </h2>
-
-                <button onClick={() => {
-                    isNotifSuccess(false);
-                    handleSuccessState(notifSuccess);
-                }} id="close-success" name="close-window" className="close-btn">CLOSE</button>
-            </dialog>
-
-            <dialog className={`notif-fail ${notifFail? 'active' : 'inactive' }`}>
-                <h2 className="dialog-text">
-                    Please try again.
-                </h2>
-
-                <button onClick={() => {
-                    isNotifFail(false);
-                    handleFailState(notifFail);
-                }} id="close-fail" name="close-window" className="close-btn">CLOSE</button>
-            </dialog>
 
         </section>
     );

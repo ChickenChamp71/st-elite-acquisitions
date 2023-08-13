@@ -9,24 +9,22 @@
 }
 
 .transparent {
-    height: 1463px;
     background-color: rgba(255, 255, 255, 0.7);
 }
 
 h1 {
-    opacity: 100%;
     font-size: 48px;
     text-align: center;
     font-weight: bold;
     letter-spacing: 11.28px;
+    line-height: 57px;
 }
 
-.transparent h1 {
+#top-title {
     padding-top: 148px;
 }
 
-.transparent h2 {
-    opacity: 100%;
+#top-subtitle {
     font-size: 30px;
     text-align: center;
     font-weight: bold;
@@ -39,9 +37,172 @@ h1 {
     justify-content: center;
 }
 
-.white-box {
+.bullet-list-flex {
     display: flex;
     justify-content: center;
+}
+
+#bullet-list {
+    margin: 80px 0 77px 0;
+    background-color: white;
+    border-radius: 14px;
+    width: 902px;
+    height: 376px;
+}
+
+#bullet-list ul {
+    margin: 56px 51px 59px 82px;
+}
+
+#bullet-list ul li {
+    font-size: 30px;
+    letter-spacing: 3.09px;
+    line-height: 37px;
+    list-style-type: disc;
+}
+
+#about-us {
+    background-color: white;
+    margin-top: 80px;
+    margin-bottom: 109px;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 81px;
+}
+
+.people {
+    display: flex;
+    flex-direction: row;
+}
+
+.people img {
+    border-radius: 14px;
+    width: 375px;
+    height: 497px;
+}
+
+.people .side-text-about {
+    padding: 0 62px 0 62px;
+    width: 258px;
+}
+
+.people .side-text-about h2 {
+    font-size: 30px;
+    letter-spacing: 3.09px;
+    line-height: 37px;
+    font-weight: bold;
+    margin-bottom: 28px;
+}
+
+.people .side-text-about p {
+    font-size: 20px;
+    letter-spacing: 0.48px;
+    line-height: 24px;
+    color: #404040;
+}
+
+#how-it-works {
+    background-image: url("../styles/imgs/david-kovalenko-9-qFzV9a2Zc-unsplash.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+.how-it-flex {
+    display: flex;
+    justify-content: center;
+}
+
+#how-it-box {
+    background-color: white;
+    border-radius: 14px;
+    width: 1490px;
+    height: fit-content;
+    margin-top: 68px;
+}
+
+#how-it-box h1 {
+    margin-top: 43px;
+}
+
+.work-steps {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 81px 40px 23px 40px;
+}
+
+.step-boxes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    height: fit-content;
+}
+
+.step-boxes h2 {
+    font-size: 30px;
+    letter-spacing: 3.09px;
+    line-height: 37px;
+    font-weight: bold;
+    margin-top: 19px;
+}
+
+.step-boxes p {
+    width: 258px;
+    height: 119px;
+    font-size: 20px;
+    letter-spacing: 0.48px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.selling-home-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#selling-your-home {
+    background-color: white;
+    border-radius: 14px;
+    width: 1317px;
+    height: fit-content;
+    margin-top: 75px;
+}
+
+#selling-your-home h2 {
+    margin-top: 82px;
+    font-size: 30px;
+    letter-spacing: 3.09px;
+    line-height: 37px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.flex-paragraph {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#selling-your-home p {
+    margin-top: 26px;
+    width: 902px;
+    font-size: 20px;
+    letter-spacing: 0.48px;
+    line-height: 24px;
+    color: #404040;
+    padding-bottom: 53px;
+}
+
+#contact-2 {
+    margin-top: 27px;
+    padding-bottom: 61px;
 }
 
 @media screen and (max-width: 1050px) {
