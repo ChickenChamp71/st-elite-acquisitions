@@ -1,8 +1,5 @@
-.privacy-policy-main {
-    padding-top: 271px;
-}
-
 .privacy-policy-main h1 {
+    padding-top: 200px;
     margin-bottom: 71px;
 }
 
@@ -37,13 +34,13 @@
     width: 451px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1010px) {
     .privacy-policy-main {
-        padding-top: 40px;
-        padding: 40px 26px 26px 26px;
+        padding: 110px 60px 26px 60px;
     }
 
     .privacy-policy-main h1 {
+        padding-top: 0;
         font-size: 28px;
         letter-spacing: 6.58px;
         line-height: normal;
@@ -73,5 +70,12 @@
         letter-spacing: 2.74px;
         line-height: normal;
         width: fit-content;
+    }
+}
+
+@media screen and (max-width: 791px) {
+    .privacy-policy-main {
+        padding-top: 40px;
+        padding: 40px 26px 26px 26px;
     }
 }

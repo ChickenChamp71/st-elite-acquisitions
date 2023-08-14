@@ -182,7 +182,7 @@ html {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 791px) {
     .nav-drop-down {
         display: block;
     }
