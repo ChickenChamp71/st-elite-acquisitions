@@ -260,6 +260,10 @@ input[type=email] {
         font-size: 15px;
     }
 
+    #name-margin {
+        margin-bottom: 5px;
+    }
+
     .contact-form-p {
         font-size: 14px;
         letter-spacing: 0.34px;

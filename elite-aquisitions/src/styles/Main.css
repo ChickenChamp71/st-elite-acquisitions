@@ -205,8 +205,172 @@ h1 {
     padding-bottom: 61px;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 800px) {
     .main-home {
         margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #top-title {
+        padding-top: 20px;
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 0.235em;
+        line-height: normal;
+    }
+
+    #top-subtitle {
+        margin-top: 15px;
+        font-size: 14px;
+        letter-spacing: 2.74px;
+        line-height: 17px;
+    }
+
+    #bullet-list {
+        width: 85%;
+        height: fit-content;
+    }
+
+    #bullet-list ul {
+        margin: 20px 5px 20px 25px;
+    }
+
+    #bullet-list ul li {
+        font-size: 14px;
+        letter-spacing: 0.035em;
+        line-height: normal;
+    }
+
+    #about-us {
+        margin-top: 25px;
+        margin-bottom: 0px;
+    }
+
+    #about-us h1 {
+        font-size: 28px;
+        letter-spacing: 6.58px;
+        line-height: 33px;
+        margin-bottom: 25px;
+    }
+
+    .about {
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .people {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .people img {
+        width: 242px;
+        height: 311px;
+        margin-bottom: 32px;
+    }
+
+    .people .side-text-about {
+        width: 75%;
+    }
+
+    .people .side-text-about h2 {
+        font-size: 14px;
+        letter-spacing: 2.74px;
+        line-height: 17px;
+        text-align: center;
+    }
+
+    .people .side-text-about p {
+        font-size: 14px;
+        letter-spacing: 0.43px;
+        line-height: 17px;
+        margin-bottom: 32px;
+    }
+
+    #second-about-p {
+        margin-bottom: 23px;
+    }
+
+    #how-it-box {
+        width: 85%;
+        margin-top: 21px;
+    }
+
+    #how-it-box h1 {
+        font-size: 28px;
+        letter-spacing: 6.58px;
+        line-height: 33px;
+        margin-top: 28px;
+        margin: 28px 32px 0 32px;
+    }
+
+    .work-steps {
+        flex-direction: column;
+        margin: 35px 0 30px 0;
+    }
+
+    .step-boxes svg {
+        height: 70px;
+        width: 70px;
+    }
+
+    .step-boxes h2 {
+        font-size: 14px;
+        letter-spacing: 0.103em;
+        margin-top: -8px;
+    }
+
+    .step-boxes p {
+        font-size: 14px;
+        letter-spacing: 0.024em;
+        line-height: normal;
+        margin-top: -8px;
+        height: fit-content;
+        margin-bottom: 40px;
+    }
+
+    #closing-step p {
+        margin-bottom: 0px;
+    }
+
+    #selling-your-home {
+        width: 85%;
+        margin-top: 36px;
+    }
+
+    #selling-your-home h2 {
+        font-size: 14px;
+        letter-spacing: 2.74px;
+        line-height: normal;
+        margin-top: 32px;
+        padding: 0 32px 0 32px;
+    }
+
+    .flex-paragraph {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #selling-your-home p {
+        font-size: 14px;
+        letter-spacing: 0.34px;
+        line-height: normal;
+        padding: 0 24px 0 24px;
+        width: fit-content;
+    }
+
+    #selling-your-home .top-para {
+        margin-top: 23px;
+    }
+
+    #selling-your-home .bottom-para {
+        margin-top: 14px;
+        margin-bottom: 19px;
+    }
+
+    #contact-2 {
+        margin-top: -2px;
+        padding-bottom: 52px;
     }
 }

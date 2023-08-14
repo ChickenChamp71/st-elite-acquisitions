@@ -4,7 +4,7 @@ import '../../styles/PrivacyPolicy.css';
 export default function PrivacyPolicy() {
 
     return (
-        <main className="privacy-policy-main">
+        <main className="privacy-policy-main" id="privacy-policy">
             <h1>
                 PRIVACY POLICY
             </h1>

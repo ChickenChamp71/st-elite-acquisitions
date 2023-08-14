@@ -36,3 +36,42 @@
     margin-bottom: 0px; 
     width: 451px;
 }
+
+@media screen and (max-width: 800px) {
+    .privacy-policy-main {
+        padding-top: 40px;
+        padding: 40px 26px 26px 26px;
+    }
+
+    .privacy-policy-main h1 {
+        font-size: 28px;
+        letter-spacing: 6.58px;
+        line-height: normal;
+        margin-bottom: 17px;
+    }
+
+    .privacy-questions {
+        width: fit-content;
+    }
+
+    .privacy-flex .question-answer h2 {
+        font-size: 14px;
+        letter-spacing: 0.196em;
+        line-height: normal;
+        margin-bottom: 4px;
+    }
+
+    .privacy-flex .question-answer p {
+        font-size: 14px;
+        letter-spacing: 0.024em;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+
+    #h2-location-privacy {
+        font-size: 14px;
+        letter-spacing: 2.74px;
+        line-height: normal;
+        width: fit-content;
+    }
+}

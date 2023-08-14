@@ -86,7 +86,7 @@ export default function Main({ handleFailState, handleSuccessState, notifState }
                             <h2>
                                 TONY LUKAS
                             </h2>
-                            <p>
+                            <p id="second-about-p">
                                 Tony Lukas is a skilled real estate investor with expertise in mortgages and has been a valuable contributor to the industry since 2018. Relocating from Chicago to Washington in 2019, he's driven by a passion for helping clients achieve homeownership dreams. With commitment and keen investment acumen, he flourishes in the Pacific Northwest's dynamic real estate scene.
                             </p>
                         </div>
@@ -160,8 +160,12 @@ export default function Main({ handleFailState, handleSuccessState, notifState }
                             </h2>
 
                             <div className="flex-paragraph">
-                                <p>
-                                    ST Elite Acquisitions specializes in purchasing houses throughout Washington directly from homeowners. Unlike traditional real estate agents who list properties, we are the direct buyers, offering cash payments that allow for quick and flexible closing timelines, tailored to your preferences. Working with us means no fees or commissions, which are typically associated with listing a house with an agent. You won't have to deal with extra costs or come out of pocket to sell your home promptly. Plus, there's no need to worry about preparing your property for sale, as we are willing to buy it in its current condition, whether it's in need of repair or not, and regardless of its location. We believe in hassle-free transactions, ensuring you can sell your house fast without the burden of additional expenses or home improvements.
+                                <p className="top-para">
+                                    ST Elite Acquisitions specializes in purchasing houses throughout Washington directly from homeowners. Unlike traditional real estate agents who list properties, we are the direct buyers, offering cash payments that allow for quick and flexible closing timelines, tailored to your preferences.
+                                </p>
+                                <p className="bottom-para">  
+                                    Working with us means no fees or commissions, which are typically associated with listing a house with an agent. You won't have to deal with extra costs or come out of pocket to sell your home promptly. 
+                                    Plus, there's no need to worry about preparing your property for sale, as we are willing to buy it in its current condition, whether it's in need of repair or not, and regardless of its location. We believe in hassle-free transactions, ensuring you can sell your house fast without the burden of additional expenses or home improvements.
                                 </p>
                             </div>
 

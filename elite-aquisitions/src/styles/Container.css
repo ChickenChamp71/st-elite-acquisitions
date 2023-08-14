@@ -71,12 +71,6 @@ html {
     z-index: 1;
 }
 
-.header-notif.dialog header {
-    animation-name: notification;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-}
-
 .body.dialog {
     animation-name: notification;
     animation-duration: 0.5s;
@@ -142,6 +136,15 @@ html {
     z-index: 1000;
 }
 
+.header-notif.dialog,
+.drop-menu.dialog {
+    animation-name: notification;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
 .drop-trigger {
     background-color: white;
 }
@@ -205,8 +208,22 @@ html {
         justify-content: space-between;
         
     }
+
+    #trigger-target {
+        margin: 25px 25px 0 0;
+    }
 }
 
 @media screen and (max-width: 640px) {
+    .notif-success,
+    .notif-fail {
+        width: 75%;
+        font-size: 28px;
+    }
 
+    .close-btn {
+        font-size: 14px;
+        height: 53px;
+        width: 160px;
+    }
 }

@@ -20,13 +20,22 @@ export default function Container() {
         let handler = (e) => {
 
             if (menuRef.current && !menuRef.current.contains(e.target)) {
+
+                if (e.target.id === "trigger-target") {
+                    return;
+                }
+
                 setOpen(false);
             }
         }
 
         document.addEventListener('mousedown', handler);
 
-    });
+        return () => {
+            document.removeEventListener('mousedown', handler);
+        };
+
+    }, []);
 
     const renderPage = () => {
 
@@ -61,15 +70,6 @@ export default function Container() {
         setNotifState(false);
     };
 
-    const openTriggerCheck = () => {
-        if (!open) {
-            console.log(open)
-            setOpen(true);
-            return;
-        }
-        setOpen(false);
-    }
-
     return (
         <div className='notif-div'>
 
@@ -91,15 +91,16 @@ export default function Container() {
             
             <div className="total-header">
 
-                <div className={`header-notif ${notifState? "dialog" : ""}`} ref={menuRef}>
+                <div className={`header-notif ${notifState? "dialog" : ""}`}>
                      <Header notifState={notifState} />
                      <div className='drop-trigger'>
-                        <img src={toggle} alt='Toggle menu button.' onClick={openTriggerCheck} />
+                        <img id="trigger-target" src={toggle} alt='Toggle menu button.' onClick={() => setOpen(!open)} />
                     </div>
                 </div>
 
                 <div className='nav-drop-down' ref={menuRef}>
-                    <div className={`drop-menu ${open? 'active' : 'inactive'}` }>
+
+                    <div className={`drop-menu ${open? 'active' : 'inactive'} ${notifState? "dialog" : ""}` }>
                         <li id='contact-drop-menu'>
                             <a href='#contact' onClick={() => {
                             setOpen(false)

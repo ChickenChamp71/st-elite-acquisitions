@@ -225,6 +225,7 @@ export default function Contact({ handleFailState, handleSuccessState, notifStat
                             onBlur={handleNameErr}
                             onChange={handleInputChange}
                             className={`name-input input-border ${redName? 'red' : 'not-red'} ${notifState? 'disabled' : ''}`}
+                            id="name-margin"
                         />
                         {nameErr && (
                             <div className="error-div" id="id-name-err">
