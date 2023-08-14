@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/st-elite-acquisitons/static/css/main.52beb2a9.css",
-    "main.js": "/st-elite-acquisitons/static/js/main.8f6e3d49.js",
-    "static/js/787.17ed2b82.chunk.js": "/st-elite-acquisitons/static/js/787.17ed2b82.chunk.js",
-    "static/media/david-kovalenko-9-qFzV9a2Zc-unsplash.png": "/st-elite-acquisitons/static/media/david-kovalenko-9-qFzV9a2Zc-unsplash.4befa0e204602d864f3a.png",
-    "static/media/andy-holmes-f6eWKcd8_dA-unsplash.png": "/st-elite-acquisitons/static/media/andy-holmes-f6eWKcd8_dA-unsplash.836796f42fa2fe814f9a.png",
-    "index.html": "/st-elite-acquisitons/index.html",
-    "static/media/linkedin-svgrepo-com.svg": "/st-elite-acquisitons/static/media/linkedin-svgrepo-com.f73ee2f5e87ef6d0decf83a25b5945a1.svg",
-    "static/media/closing.svg": "/st-elite-acquisitons/static/media/closing.34700eb54b9f854f41abf371d2ce0a6e.svg",
-    "static/media/contact-us.svg": "/st-elite-acquisitons/static/media/contact-us.daf516e6abd95cf60bd500aa51174d7e.svg",
-    "static/media/the-offer.svg": "/st-elite-acquisitons/static/media/the-offer.20ea91710ec5288af1f17a41db846780.svg",
-    "static/media/we-contact-you.svg": "/st-elite-acquisitons/static/media/we-contact-you.ad9b73d92be7ed696efffe169203d0cd.svg",
-    "static/media/facebook-svgrepo-com.svg": "/st-elite-acquisitons/static/media/facebook-svgrepo-com.df6067d3cf40fdc514ab76b0aaffdafd.svg",
-    "main.52beb2a9.css.map": "/st-elite-acquisitons/static/css/main.52beb2a9.css.map",
-    "main.8f6e3d49.js.map": "/st-elite-acquisitons/static/js/main.8f6e3d49.js.map",
-    "787.17ed2b82.chunk.js.map": "/st-elite-acquisitons/static/js/787.17ed2b82.chunk.js.map"
+    "main.css": "/st-elite-acquisitions/static/css/main.898da314.css",
+    "main.js": "/st-elite-acquisitions/static/js/main.27b384b7.js",
+    "static/js/787.17ed2b82.chunk.js": "/st-elite-acquisitions/static/js/787.17ed2b82.chunk.js",
+    "static/media/david-kovalenko-9-qFzV9a2Zc-unsplash.png": "/st-elite-acquisitions/static/media/david-kovalenko-9-qFzV9a2Zc-unsplash.4befa0e204602d864f3a.png",
+    "static/media/andy-holmes-f6eWKcd8_dA-unsplash.png": "/st-elite-acquisitions/static/media/andy-holmes-f6eWKcd8_dA-unsplash.836796f42fa2fe814f9a.png",
+    "index.html": "/st-elite-acquisitions/index.html",
+    "static/media/linkedin-svgrepo-com.svg": "/st-elite-acquisitions/static/media/linkedin-svgrepo-com.f73ee2f5e87ef6d0decf83a25b5945a1.svg",
+    "static/media/closing.svg": "/st-elite-acquisitions/static/media/closing.34700eb54b9f854f41abf371d2ce0a6e.svg",
+    "static/media/contact-us.svg": "/st-elite-acquisitions/static/media/contact-us.daf516e6abd95cf60bd500aa51174d7e.svg",
+    "static/media/the-offer.svg": "/st-elite-acquisitions/static/media/the-offer.20ea91710ec5288af1f17a41db846780.svg",
+    "static/media/we-contact-you.svg": "/st-elite-acquisitions/static/media/we-contact-you.ad9b73d92be7ed696efffe169203d0cd.svg",
+    "static/media/facebook-svgrepo-com.svg": "/st-elite-acquisitions/static/media/facebook-svgrepo-com.df6067d3cf40fdc514ab76b0aaffdafd.svg",
+    "main.898da314.css.map": "/st-elite-acquisitions/static/css/main.898da314.css.map",
+    "main.27b384b7.js.map": "/st-elite-acquisitions/static/js/main.27b384b7.js.map",
+    "787.17ed2b82.chunk.js.map": "/st-elite-acquisitions/static/js/787.17ed2b82.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.52beb2a9.css",
-    "static/js/main.8f6e3d49.js"
+    "static/css/main.898da314.css",
+    "static/js/main.27b384b7.js"
   ]
 }
