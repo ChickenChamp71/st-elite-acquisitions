@@ -6,7 +6,7 @@ import '../styles/Header.css';
 export default function Header({ currentPage, handlePageChange, notifState }) {
 
     return (
-        <header>
+        <header className={`header-disable ${notifState? 'disabled' : ''}`}>
             <img className='logo' id='header-logo' src={logo} alt='Logo for ST Elite Acquisitions' />
 
             <nav className='nav-bar'>

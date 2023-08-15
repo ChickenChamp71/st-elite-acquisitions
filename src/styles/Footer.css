@@ -3,12 +3,12 @@ footer {
     justify-content: space-between;
     flex-direction: row;
     align-items: flex-end;
-    padding: 39px 70px 43px 70px;
+    padding: 39px 4% 43px 4%;
     background-color: white;
 }
 
 .footer-section {
-    width: 33%;
+    width: 30%;
 }
 
 .left-footer {

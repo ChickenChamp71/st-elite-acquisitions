@@ -67,7 +67,7 @@ export default function Main({ handleFailState, handleSuccessState, notifState }
 
                 <div className="about">
                     <div className="people" id="skyler">
-                        <img src="http://placekitten.com/375/497" alt="Skyler Kay, kitten rn" />
+                        <img src="#" alt="Skyler Kay" />
 
                         <div className="side-text-about">
                             <h2>
@@ -80,7 +80,7 @@ export default function Main({ handleFailState, handleSuccessState, notifState }
                     </div>
 
                     <div className="people" id="tony">
-                        <img src="http://placekitten.com/375/497" alt="Skyler Kay, kitten rn" />
+                        <img src="#" alt="Tony Lukas" />
 
                         <div className="side-text-about">
                             <h2>

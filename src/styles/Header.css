@@ -16,11 +16,11 @@ header {
 }
 
 #header-logo {
-    padding-left: 102px;
+    padding-left: 2%;
 }
 
 .nav-bar {
-    padding-right: 85px;
+    padding-right: 2%;
 }
 
 .nav-options {
@@ -30,7 +30,6 @@ header {
 
 .nav-options li {
     margin-left: 58px;
-    
 }
 
 .nav-options li a {
@@ -40,6 +39,12 @@ header {
     font-weight: bold;
     font-size: 20px;
     letter-spacing: 2.06px;
+}
+
+.header-disable.disabled {
+    animation-name: notification;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 
 .disabled-link.disabled {
@@ -53,7 +58,7 @@ header {
     }
 
     #header-logo {
-        padding-left: 50px;
+        padding-left: 2%;
         max-width: 240px;
         max-height: 76px;
     }
@@ -67,7 +72,11 @@ header {
     }
 
     .nav-bar {
-        padding-right: 50px;
+        padding-right: 2%;
+    }
+
+    .nav-options #contact-top-links {
+        margin-left: 0;
     }
 }
 

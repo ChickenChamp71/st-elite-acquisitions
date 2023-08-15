@@ -227,3 +227,11 @@ html {
         width: 160px;
     }
 }
+
+@media screen and (max-width: 340px) {
+
+    #trigger-target {
+        margin: 25px 0 0 0;
+        padding-right: 15px;
+    }
+}
