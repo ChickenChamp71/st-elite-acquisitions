@@ -30,19 +30,19 @@ export default function Contact({ handleFailState, handleSuccessState, notifStat
         const inputType = target.name;
         const inputValue = target.value;
 
-        if (inputType === 'address') {
+        if (inputType === 'entry.462407856') {
             setAddress(inputValue);
         };
 
-        if (inputType === 'phone') {
+        if (inputType === 'entry.1846674777') {
             setPhone(inputValue);
         };
 
-        if (inputType === 'email') {
+        if (inputType === 'entry.1676605646') {
             setEmail(inputValue);
         };
 
-        if (inputType === 'name') {
+        if (inputType === 'entry.132506845') {
             setName(inputValue);
         };
     };
