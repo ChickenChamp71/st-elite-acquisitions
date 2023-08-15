@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/st-elite-acquisitions/static/css/main.2c90d3a2.css",
+    "main.css": "/st-elite-acquisitions/static/css/main.30a29bec.css",
     "main.js": "/st-elite-acquisitions/static/js/main.dd4ceef3.js",
     "static/js/787.17ed2b82.chunk.js": "/st-elite-acquisitions/static/js/787.17ed2b82.chunk.js",
     "static/media/david-kovalenko-9-qFzV9a2Zc-unsplash.png": "/st-elite-acquisitions/static/media/david-kovalenko-9-qFzV9a2Zc-unsplash.4befa0e204602d864f3a.png",
@@ -12,12 +12,12 @@
     "static/media/the-offer.svg": "/st-elite-acquisitions/static/media/the-offer.20ea91710ec5288af1f17a41db846780.svg",
     "static/media/we-contact-you.svg": "/st-elite-acquisitions/static/media/we-contact-you.ad9b73d92be7ed696efffe169203d0cd.svg",
     "static/media/facebook-svgrepo-com.svg": "/st-elite-acquisitions/static/media/facebook-svgrepo-com.df6067d3cf40fdc514ab76b0aaffdafd.svg",
-    "main.2c90d3a2.css.map": "/st-elite-acquisitions/static/css/main.2c90d3a2.css.map",
+    "main.30a29bec.css.map": "/st-elite-acquisitions/static/css/main.30a29bec.css.map",
     "main.dd4ceef3.js.map": "/st-elite-acquisitions/static/js/main.dd4ceef3.js.map",
     "787.17ed2b82.chunk.js.map": "/st-elite-acquisitions/static/js/787.17ed2b82.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c90d3a2.css",
+    "static/css/main.30a29bec.css",
     "static/js/main.dd4ceef3.js"
   ]
 }
