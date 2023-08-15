@@ -92,7 +92,7 @@ export default function Container() {
             <div className="total-header">
 
                 <div className={`header-notif ${notifState? "dialog" : ""}`}>
-                     <Header notifState={notifState} />
+                     <Header notifState={notifState} currentPage={currentPage} handlePageChange={handlePageChange} />
                      <div className='drop-trigger'>
                         <img id="trigger-target" src={toggle} alt='Toggle menu button.' onClick={() => setOpen(!open)} />
                     </div>
@@ -103,22 +103,25 @@ export default function Container() {
                     <div className={`drop-menu ${open? 'active' : 'inactive'} ${notifState? "dialog" : ""}` }>
                         <li id='contact-drop-menu'>
                             <a href='#contact' onClick={() => {
-                            setOpen(false)
-                            }}>
+                                setOpen(false);
+                                handlePageChange('Main')
+                            }} className={`contact-href ${currentPage === 'Home' ? 'nav-link-active' : 'nav-link'}`}>
                                 CONTACT
                             </a>
                         </li>
                         <li id='about-us-drop-menu'>
                             <a href='#about-us' onClick={() => {
-                            setOpen(false)
-                            }}>
+                                setOpen(false);
+                                handlePageChange('Main');
+                            }} className={`about-us-href ${currentPage === 'Home' ? 'nav-link-active' : 'nav-link'}`}>
                                 ABOUT US
                             </a>
                         </li>
                         <li id='how-it-works-drop-menu'>
                             <a href='#how-it-works' onClick={() => {
-                            setOpen(false)
-                            }}>
+                                setOpen(false);
+                                handlePageChange('Main');
+                            }} className={`how-it-works-href ${currentPage === 'Home' ? 'nav-link-active' : 'nav-link'}`}>
                                 HOW IT WORKS
                             </a>
                         </li>

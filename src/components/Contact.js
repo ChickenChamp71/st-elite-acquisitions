@@ -170,13 +170,13 @@ export default function Contact({ handleFailState, handleSuccessState, notifStat
     return (
         <section className="contact-form-container">
             <div className="total-form">
-                <form action="" method="post">
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSeB4lTAZ5RNqJvDjwQ2rpxRYUB76UdlXVqN7-ww3dXXf2IdIw/viewform" method="post">
                     <div className="input-box-flex">
                         <input 
                             value={address} 
                             type="text" 
                             placeholder="PROPERTY ADDRESS" 
-                            name="address"
+                            name="entry.462407856"
                             onBlur={handleAddressErr}
                             onChange={handleInputChange}
                             className={`address-input input-border ${redAddress? 'red' : 'not-red'} ${notifState? 'disabled' : ''}`}
@@ -191,7 +191,7 @@ export default function Contact({ handleFailState, handleSuccessState, notifStat
                             value={phone} 
                             type="text" 
                             placeholder="PHONE" 
-                            name="phone"
+                            name="entry.1846674777"
                             onBlur={handlePhoneErr}
                             onChange={handleInputChange}
                             className={`phone-input input-border ${redPhone? 'red' : 'not-red'} ${notifState? 'disabled' : ''}`}
@@ -206,7 +206,7 @@ export default function Contact({ handleFailState, handleSuccessState, notifStat
                             value={email} 
                             type="email" 
                             placeholder="EMAIL" 
-                            name="email"
+                            name="entry.1676605646"
                             onBlur={handleEmailErr}
                             onChange={handleInputChange}
                             className={`email-input input-border ${redEmail? 'red' : 'not-red'} ${notifState? 'disabled' : ''}`}
@@ -221,7 +221,7 @@ export default function Contact({ handleFailState, handleSuccessState, notifStat
                             value={name} 
                             type="text" 
                             placeholder="NAME" 
-                            name="name" 
+                            name="entry.132506845" 
                             onBlur={handleNameErr}
                             onChange={handleInputChange}
                             className={`name-input input-border ${redName? 'red' : 'not-red'} ${notifState? 'disabled' : ''}`}
@@ -249,7 +249,7 @@ export default function Contact({ handleFailState, handleSuccessState, notifStat
                     <div className="para-sub-box">
                         <p className="contact-form-p">By completing this form, you give consent to ST Elite Acquisitions to send SMS Text Messages. Standard message and data rates may apply.</p>
 
-                        <button type="button" onClick={handleFormSubmit} className={`submit-btn ${notifState? 'disabled' : ''}`}>SUBMIT</button>
+                        <button type="submit" onClick={handleFormSubmit} className={`submit-btn ${notifState? 'disabled' : ''}`}>SUBMIT</button>
                     </div>
 
                 </form>
@@ -259,11 +259,11 @@ export default function Contact({ handleFailState, handleSuccessState, notifStat
                 </p>
 
                 <h5 className="phone-number">
-                    (669) 696-6969
+                    (425) 900-1393 | (425) 832-9240
                 </h5>
 
                 <h5 className="email-main">
-                    EMAIL@STELITEACQUISITIONS.GOV
+                    INFO@STELITEACQUISITIONS.COM
                 </h5>
             </div>
 

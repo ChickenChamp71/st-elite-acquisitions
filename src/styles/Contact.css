@@ -1,7 +1,7 @@
 .contact-form-container {
     background-color: white;
     width: 902px;
-    height: 645px;
+    height: fit-content;
     border-radius: 14px;
     margin-top: 49px;
 }
@@ -20,6 +20,13 @@
 
 .address-input {
     width: 100%;
+}
+
+.phone-input,
+.email-input,
+.name-input,
+.check-disable {
+    width: 40%;
 }
 
 input[type=text],

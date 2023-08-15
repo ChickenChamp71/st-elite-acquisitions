@@ -27,13 +27,13 @@ export default function Footer({ currentPage, handlePageChange, notifState }) {
 
                     <li className="phone-number footer-phone">
                         <h5>
-                            (669) 696-6969
+                            (425) 900-1393 | (425) 832-9240
                         </h5>
                     </li>
 
                     <li className="email-main footer-email">
                         <h5>
-                            EMAIL@STELITEACQUISITIONS.GOV
+                            INFO@STELITEACQUISITIONS.COM
                         </h5>
                     </li>
                 </ul>
@@ -58,19 +58,19 @@ export default function Footer({ currentPage, handlePageChange, notifState }) {
                     </li>
 
                     <li id="footer-contact">
-                        <a href="#contact-2" className={`contact-2-disable ${notifState? 'disabled' : ''}`}>
+                        <a href="#contact-2" className={`contact-2-disable ${notifState? 'disabled' : ''} ${currentPage === 'Home' ? 'nav-link-active' : 'nav-link'}`} onClick={() => handlePageChange('Main')}>
                             CONTACT
                         </a>
                     </li>
                     
                     <li id="footer-about-us">
-                        <a href="#about-us" className={`about-2-disable ${notifState? 'disabled' : ''}`}>
+                        <a href="#about-us" className={`about-2-disable ${notifState? 'disabled' : ''} ${currentPage === 'Home' ? 'nav-link-active' : 'nav-link'}`} onClick={() => handlePageChange('Main')}>
                             ABOUT US
                         </a>
                     </li>
 
                     <li id="footer-how-it-works">
-                        <a href="#how-it-works" className={`how-2-disable ${notifState? 'disabled' : ''}`}>
+                        <a href="#how-it-works" className={`how-2-disable ${notifState? 'disabled' : ''} ${currentPage === 'Home' ? 'nav-link-active' : 'nav-link'}`} onClick={() => handlePageChange('Main')}>
                             HOW IT WORKS
                         </a>
                     </li>
