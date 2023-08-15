@@ -191,11 +191,6 @@ html {
         display: none;
     }
 
-    .nav-bar {
-        padding-right: 28px;
-        padding-top: 13px;
-    }
-
     .total-header {
         display: flex;
         justify-content: space-between;
@@ -231,7 +226,7 @@ html {
 @media screen and (max-width: 340px) {
 
     #trigger-target {
-        margin: 25px 0 0 0;
-        padding-right: 15px;
+        margin: 25px 6px 0 0;
     }
+
 }

@@ -296,3 +296,11 @@ input[type=email] {
         overflow: hidden;
     }
 }
+
+@media screen and (max-width: 340px) {
+    input[type=text],
+    input[type=email] {
+        font-size: 13px;
+        letter-spacing: 0.2px;
+    }
+}
