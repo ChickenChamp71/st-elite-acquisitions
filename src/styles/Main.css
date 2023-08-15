@@ -363,7 +363,7 @@ h1 {
         font-size: 16px;
         letter-spacing: 0.34px;
         line-height: normal;
-        padding: 0 24px 0 24px;
+        padding: 0 5% 0 5%;
         width: fit-content;
     }
 
@@ -468,5 +468,6 @@ h1 {
 
     .step-boxes p {
         width: fit-content;
+        padding: 0 6% 0 6%;
     }
 }

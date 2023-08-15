@@ -193,3 +193,30 @@ footer {
     }
 }
 
+@media screen and (max-width: 340px) {
+    .left-footer ul {
+        justify-content: center;
+    }
+
+    .footer-phone h5,
+    .footer-email h5 {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .linkedin-disable {
+        margin-right: 26px;
+    }
+
+    .facebook-disable {
+        margin-top: 0;
+    }
+
+    #link-imgs {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+    }
+}

@@ -170,7 +170,7 @@ export default function Contact({ handleFailState, handleSuccessState, notifStat
     return (
         <section className="contact-form-container">
             <div className="total-form">
-                <form action="https://docs.google.com/forms/d/e/1FAIpQLSeB4lTAZ5RNqJvDjwQ2rpxRYUB76UdlXVqN7-ww3dXXf2IdIw/viewform" method="post">
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeB4lTAZ5RNqJvDjwQ2rpxRYUB76UdlXVqN7-ww3dXXf2IdIw/formResponse" method="post">
                     <div className="input-box-flex">
                         <input 
                             value={address} 
@@ -237,7 +237,7 @@ export default function Contact({ handleFailState, handleSuccessState, notifStat
                             <input 
                                 value={recieve}
                                 type="checkbox" 
-                                name="recieve" 
+                                name="entry.306453473" 
                                 checked={recieve}
                                 onChange={handleCheckboxChange}
                                 className={`check-disable ${notifState? 'disabled' : ''}`}
